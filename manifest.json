@@ -1,7 +1,7 @@
 {
     "update_url": "https://clients2.google.com/service/update2/crx",
-    "name": "Twitch2Youtube",
-    "version": "0.1",
+    "name": "Stream2Youtube",
+    "version": "0.2",
     "manifest_version": 3,
     "permissions": [
         "storage"
@@ -20,6 +20,10 @@
         {
             "js": ["youtube.js"],
             "matches": ["https://www.youtube.com/*"]
+        },
+        {
+            "js": ["chzzk.js"],
+            "matches": ["https://chzzk.naver.com/live/*"]
         }
     ],
     "default_locale": "ko"
