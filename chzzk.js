@@ -11,7 +11,7 @@
     }
 
     async function getLiveDetail(){
-        const content = await fetch(`https://api.chzzk.naver.com/service/v1/channels/${getChannelID()}/live-detail`)
+        const content = await fetch(`https://api.chzzk.naver.com/service/v2/channels/${getChannelID()}/live-detail`)
             .then(v => v.json())
             .then(v => v.content);
 
